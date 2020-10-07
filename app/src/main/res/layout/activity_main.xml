@@ -4,15 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:paddingTop="30dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="40dp"
+    android:background="#F6F8FA">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/notoblack"
+        android:includeFontPadding="false"
+        android:text="@string/app_title"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_new"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:fontFamily="@font/notoblack"
+        android:textColor="#888888"
+        android:includeFontPadding="false"
+        android:padding="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round12dp"
+        android:autofillHints="none"
+        android:inputType="textUri" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

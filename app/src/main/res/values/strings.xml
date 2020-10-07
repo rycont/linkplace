@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">linkplace</string>
+    <string name="app_title">읽을거리</string>
+    <string name="add_new">새 링크 등록</string>
 </resources>
